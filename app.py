@@ -14,6 +14,10 @@ def index():
 def top():
 	return render_template('/main.html')
 
+@app.route('/upload')
+def upload():
+	return render_template('/upload.html')
+
 if __name__ == "__main__":
 	app.debug = True
 	app.run(port=7000)

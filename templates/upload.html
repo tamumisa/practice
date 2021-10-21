@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>画像をアップ＆解析</h1>
+
+<div>
+<form action="/add" method="post" enctype="multipart/form-data">
+
+    <label>
+        <input type="file" name="file" class="bar">ごみを選択or撮影
+    </label>
+    <input type="submit" name="save" value="送信" class="button button-margin">
+</form>
+</div>
+
+<div>
+    <form action="/top" method="post">
+        <input type="submit" name="save" value="menuに戻る" class="button">
+    </form>
+</div>
+
+<div>
+    <form action="/analysis" method="get">
+        <input type="submit" name="save" id="解析する" class="button">
+    </form>
+</div>
+
+{% endblock %}
