@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<form action="/choose" method="get">
+    <input type="submit" name="save" value="住所から選ぶ" class="button">
+</form>
+
+<form action="/map" method="get">
+    <input type="submit" name="save" value="現在地から選ぶ" class="button">
+</form>
+
+<form action="/upload" method="get">
+    <input type="submit" name="save" value="判別だけしたい" class="button">
+</form>
+
+
+{% endblock %}
